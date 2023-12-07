@@ -1,0 +1,12 @@
+name: RunBaseActionRepo
+
+on:
+    push: 
+        branches: 
+            - master
+
+jobs:
+    welcome:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "A remote action has been invoked."
