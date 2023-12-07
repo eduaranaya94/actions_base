@@ -1,0 +1,16 @@
+name: PrintMsg
+
+on:
+    workflow_call: 
+        inputs:
+            msg:
+                required: true
+                type: string
+
+jobs:
+    print_msg_process:
+        runs-on: ubuntu-latest
+        steps:
+          - id: print
+            run: |
+             echo "${{inputs.msg}}"
