@@ -9,4 +9,5 @@ jobs:
     welcome:
         runs-on: ubuntu-latest
         steps:
-          - run: echo "A remote action has been invoked."
+          - name: Welcome Message
+            run: echo "A remote action has been invoked."
